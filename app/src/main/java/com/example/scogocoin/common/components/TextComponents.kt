@@ -49,7 +49,7 @@ fun TitleTextComponent(
         color = textColor,
         fontStyle = fontStyle,
         fontWeight = FontWeight.Normal,
-        overflow = TextOverflow.Ellipsis
+        overflow = TextOverflow.Ellipsis,
     )
 }
 

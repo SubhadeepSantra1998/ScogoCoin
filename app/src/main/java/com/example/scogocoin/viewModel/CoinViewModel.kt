@@ -45,7 +45,7 @@ class CoinViewModel @Inject constructor(
 
         if(_state.value.searchQuery.isNotBlank()){
             val searchedCoins = _state.value.coins?.filter {
-                it.name.contains(_state.value.searchQuery)
+                it.name.lowercase().contains(_state.value.searchQuery.lowercase())
             }
             _state.update {
                 it.copy(

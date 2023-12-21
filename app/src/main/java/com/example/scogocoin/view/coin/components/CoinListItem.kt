@@ -28,7 +28,10 @@ fun CoinListItem(
             },
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
-        TitleTextComponent(text = "${coin.rank}. ${coin.name} (${coin.symbol})")
+        TitleTextComponent(
+            text = "${coin.rank}. ${coin.name} (${coin.symbol})",
+            modifier = Modifier.weight(1f)
+        )
 
         BodyTextComponent(
             text = if (coin.is_active) stringResource(id = R.string.active) else stringResource(id = R.string.inactive),
